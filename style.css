@@ -49,10 +49,10 @@ body {background: lightblue;
  .left  {
     position: absolute;
     top: 0px; 
-    left: 230px;
-    right: 25px;
+    left: 0px;
+    right: 230px;
+    bottom: 25px;
     margin:auto ;
-    bottom: 0px;
     height: 30px;
     width: 100px;
     background: white ;
@@ -78,3 +78,56 @@ body {background: lightblue;
     border-bottom-right-radius: 50px;
     transform: rotateZ(90deg);
  }
+@keyframes hand {
+   0%{
+ transform: translateY(-40px)rotateZ(45deg);
+ }
+ 50%{
+   transform: translateY(0px)rotateZ(-0deg);
+    }
+    100%{
+      transform: translateY(-40px)rotateZ(45deg);
+       }
+      }
+      .eye1 {
+         position:absolute;
+         top: 0;
+         left: 0;
+         right: 25px;
+         bottom: 150px;
+         margin: auto;
+         background:repeating-linear-gradient( green 70%, #002966 80%, green);
+         height: 10px;
+         width: 15px;
+         border-top-left-radius: 50px;
+         border-top-right-radius: 50px;
+         border-bottom-left-radius: 20px;
+         border-bottom-right-radius: 20px;
+       }
+       .eye2{
+         position:absolute;
+         top: 0;
+         left: 25px;
+         right: 0px;
+         bottom: 150px;
+         margin: auto;
+         background:repeating-linear-gradient(blue 70%, #002966 80%, blue);
+         height: 10px;
+         width: 15px;
+         border-top-left-radius: 50px;
+         border-top-right-radius: 50px;
+         border-bottom-left-radius: 20px;
+         border-bottom-right-radius: 20px;
+       }
+       .robo {
+         animation: andar 5s linear infinite;
+         height: 500px;
+       }
+       @keyframes andar {
+         0% { 
+            transform: translateX(-100vw);
+         }
+         100% { transform: translateX(100vw);
+
+         }
+       }
