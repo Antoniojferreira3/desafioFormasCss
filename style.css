@@ -14,6 +14,8 @@ body {background: lightblue;
    border-top-right-radius: 20px;
    border-bottom-left-radius: 10px;
    border-bottom-right-radius: 10px;
+   border-style: solid; /* Define o estilo da borda como sólida */
+   border-color: blue; /* Define a cor da borda como azul */
 }
 .head  {
     position: absolute;
@@ -30,6 +32,8 @@ body {background: lightblue;
     border-top-right-radius: 60px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
+    border-style: solid; /* Define o estilo da borda como sólida */
+    border-color: blue; /* Define a cor da borda como azul */
  }
  .body  {
     position: absolute;
@@ -45,6 +49,8 @@ body {background: lightblue;
     border-top-right-radius: 20px;
     border-bottom-left-radius: 100px;
     border-bottom-right-radius: 100px;
+    border-style: solid; /* Define o estilo da borda como sólida */
+    border-color: blue; /* Define a cor da borda como azul */
  }
  .left  {
     position: absolute;
@@ -61,6 +67,8 @@ body {background: lightblue;
     border-bottom-left-radius: 50px;
     border-bottom-right-radius: 10px;
     animation:hand 1s linear infinite;
+    border-style: solid; /* Define o estilo da borda como sólida */
+    border-color: blue; /* Define a cor da borda como azul */
  }
  .right  {
     position: absolute;
@@ -77,6 +85,8 @@ body {background: lightblue;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 50px;
     transform: rotateZ(90deg);
+    border-style: solid; /* Define o estilo da borda como sólida */
+    border-color: blue; /* Define a cor da borda como azul */
  }
 @keyframes hand {
    0%{
@@ -111,7 +121,7 @@ body {background: lightblue;
          right: 0px;
          bottom: 150px;
          margin: auto;
-         background:repeating-linear-gradient(blue 70%, #002966 80%, blue);
+         background:repeating-linear-gradient(green 70%, #002966 80%, green);
          height: 10px;
          width: 15px;
          border-top-left-radius: 50px;
@@ -121,13 +131,13 @@ body {background: lightblue;
        }
        .robo {
          animation: andar 5s linear infinite;
-         height: 500px;
+         height: 600px;
        }
        @keyframes andar {
          0% { 
-            transform: translateX(-100vw);
+            transform: translateX(-55vw);
          }
-         100% { transform: translateX(100vw);
+         100% { transform: translateX(55vw);
 
          }
        }
